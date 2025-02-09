@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>С Днём Святого Валентина!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" />
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            color: white;
+            flex-direction: column;
+        }
+        h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        p {
+            font-size: 1.5rem;
+            max-width: 600px;
+            margin: 20px;
+        }
+        .swiper {
+            width: 80%;
+            max-width: 500px;
+        }
+        .swiper-slide img {
+            width: 100%;
+	    height: auto;
+            max-height: 400px;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+    <h1>С Днём Святого Валентина, солнышко! ❤️</h1>
+    <p>Каждый раз, когда я вижу, слышу или думаю о тебе, на моем лице появляется улыбка, сердце замирает от счастья. Я не просто безмерно люблю тебя — я всё так же влюблён в тебя, как в первый раз! Спасибо тебе за это прекрасное чувство💖</p>
+    
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="ФОТО ДЛЯ ЗАЙКИ БАНЯ.jpg" alt="фото 1"></div>
+            <div class="swiper-slide"><img src="ФОТО ДЛЯ ЗАЙКИ ЛЕЖИМ ВМЕСТЕ.jpg" alt="фото 2"></div>
+            <div class="swiper-slide"><img src="ФОТО ДЛЯ ЗАЙКИ ПЕРЕПИСКА.jpg" alt="фото 3"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+</html>
